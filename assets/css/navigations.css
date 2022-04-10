@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #212529;
+  background-color: #f8f9fa;
+  /* font-size: 1.6rem; */
+  line-height: 1 !important;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 6fr;
+  grid-template-rows: max-content 1fr;
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+.main {
+  margin-right: 5rem;
+  margin-bottom: 2rem;
+  background-color: #eff6ff;
+  border-radius: 1rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  margin-right: 5rem;
+}
+
+p {
+  margin: 0 !important;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* SIDE SECTION */
+
+/* USER PROFILE */
+.side {
+  padding-top: 3.2rem;
+  background-color: #fff;
+  max-width: 100%;
+  height: 100vh;
+  grid-row: 1 / -1;
+  position: relative;
+}
+
+.user-image {
+  width: 7.5rem;
+  border-radius: 100%;
+  margin-bottom: 0.8rem;
+}
+
+.user-name {
+  font-size: 1.8rem;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.profile {
+  text-align: center;
+}
+
+.map-icon {
+  stroke: #868e96;
+  max-width: 2rem;
+  height: 2rem;
+}
+
+.user-loc {
+  color: #868e96;
+  font-size: 1.4rem;
+}
+
+.loc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+/* MENU */
+.dash {
+  display: inline-block;
+  background-color: grey;
+  width: 50%;
+  margin: 15% 25%;
+  border-top: 1px solid gray !important;
+}
+
+.menu-name {
+  font-size: 1.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2rem !important;
+}
+
+.menu-items {
+  list-style: none;
+  margin-left: 25%;
+  font-size: 1.4rem;
+}
+
+.menu-items li {
+  margin-bottom: 2rem;
+}
+
+.menu-items li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-items li a:link,
+a:visited {
+  text-decoration: none;
+  color: #212529;
+}
+
+.menu-items li:hover a,
+.menu-items li:active a {
+  color: #339af0;
+}
+
+.menu-items li a:active {
+  transform: scale(0.98);
+}
+
+.icon-black path,
+.icon-black polygon,
+.icon-black line,
+.icon-black circle {
+  border: 0;
+  stroke: #495057;
+}
+
+.active-link .icon-black path,
+.menu-items li:hover .icon-black path,
+.menu-items li:active .icon-black path,
+.menu-items li:focus .icon-black path,
+.active-link .icon-black polygon,
+.menu-items li:hover .icon-black polygon,
+.menu-items li:active .icon-black polygon,
+.menu-items li:focus .icon-black polygon,
+.active-link .icon-black line,
+.menu-items li:hover .icon-black line,
+.menu-items li:active .icon-black line,
+.menu-items li:focus .icon-black line,
+.active-link .icon-black circle,
+.menu-items li:hover .icon-black circle,
+.menu-items li:active .icon-black circle,
+.menu-items li:focus .icon-black circle {
+  stroke: #339af0 !important;
+}
+
+.active-link,
+.active-link:link,
+.active-link:visited,
+.active-link:hover,
+.active-link:active {
+  color: #339af0 !important;
+}
+
+.active-link a {
+  color: #339af0 !important;
+}
+
+.contact-support:link,
+.contact-support:visited {
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: #e7f5ff;
+  color: #226cfc;
+  font-weight: 600;
+  font-size: 1.4rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-support:hover {
+  background-color: #2563eb;
+  color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.contact-support:active {
+  transform: scale(0.98) translate(-50%, -50%);
+}
+
+/* ICONS */
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------- */
+/* SEARCH */
+/* SEARCH BAR */
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar-input {
+  width: 65vw;
+  padding: 1.15rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #d0ebff;
+  outline-color: #a5d8ff;
+}
+
+/* SEACRH ICON */
+.search-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.search-icon-button {
+  position: absolute;
+  padding: 0.4rem 2.5rem;
+  right: 0.4rem;
+  top: 0.5rem;
+  cursor: pointer;
+  background-color: #74c0fc;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.search-icon-button:hover {
+  background-color: #007aec;
+  transition: all 0.3s;
+}
+
+.search-icon-button:active {
+  transform: translateY(1re m);
+}
+
+/* LOG OUT */
+.log-out {
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #adb5bd;
+  color: #f1f3f5;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.log-out:hover {
+  background-color: #4b5563;
+  transition: all 0.3s;
+}
+
+.log-out:active {
+  transform: scale(0.98);
+}
