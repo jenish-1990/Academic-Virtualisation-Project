@@ -44,15 +44,6 @@
   /* MYUPLOAD END */
 }
 
-@media (max-width: 69em) {
-  .myprofile-main .college-info {
-    row-gap: 1rem;
-  }
-  .myprofile-main .sub-menu {
-    margin-top: -2rem;
-  }
-}
-
 @media (max-width: 72em) {
   html {
     font-size: 55%;
@@ -78,7 +69,27 @@
   .modal {
     width: 60%;
   }
+
+  /* SIGN IN & UP */
+  .select-pad {
+    font-size: 1.5rem;
+  }
+
+  .wrapper input {
+    font-size: 1.5rem;
+  }
+  /* SIGN IN & UP END */
 }
+
+@media (max-width: 69em) {
+  .myprofile-main .college-info {
+    row-gap: 1rem;
+  }
+  .myprofile-main .sub-menu {
+    margin-top: -2rem;
+  }
+}
+
 /*--------------------------------- LAPTOPS END ------------------------------*/
 
 /*------------------------- NAV CHANGE/TABLET AND MOBILE VIEW --------------------*/
@@ -279,8 +290,41 @@
     width: calc(100% - 17rem);
   }
   /* CONTACT END */
+
+  /* SIGN IN & UP */
+  .select-pad {
+    font-size: 1.6rem;
+  }
+
+  .wrapper input {
+    font-size: 1.6rem;
+  }
+
+  .flex-radio {
+    font-size: 1.6rem;
+  }
+
+  .wrapper button,
+  .wrapper a {
+    font-size: 1.6rem;
+  }
+  /* SIGN IN & UP END */
 }
 /*------------------------------------------ TABLET AND MOBILE VIEW END ----------------------------*/
+
+/*------------------------------------------ 752px query ----------------------------*/
+@media (max-width: 47em) {
+  .inner {
+    min-width: 70rem;
+    min-height: 30rem;
+  }
+
+  .flex-two {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+/*------------------------------------------ 750px query end ----------------------------*/
 
 /*------------------------------------------ 700px query ----------------------------*/
 @media (max-width: 44em) {
@@ -366,6 +410,27 @@
     height: 20rem;
   }
   /* UPLOAD END */
+
+  /* SIGN IN & UP */
+  .inner {
+    flex-direction: column;
+    min-width: max-content;
+    min-height: 50rem;
+  }
+
+  .wrapper .form-flex {
+    width: 100%;
+  }
+
+  .inner .image-holder {
+    min-height: 50rem;
+    width: 100%;
+  }
+
+  .inner form {
+    width: 100%;
+  }
+  /* SIGN IN & UP END */
 }
 /*------------------------------------------ 600px query end----------------------------*/
 
@@ -557,5 +622,14 @@
     height: 15rem;
   }
   /* UPLOAD END */
+
+  /* SIGN IN & UP */
+  .inner {
+    margin: 1rem auto;
+  }
+  .special-class {
+    padding: 2rem !important;
+  }
+  /* SIGN IN & UP END */
 }
 /*------------------------------------------ 360px query end----------------------------*/
