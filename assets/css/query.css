@@ -369,7 +369,7 @@
   .contact-main .contactinfo {
     position: relative;
     width: 95%;
-    height: 100%;
+    height: fit-content;
     top: 0;
     left: 0;
     border-top-left-radius: 0;
@@ -384,9 +384,11 @@
     margin-top: 1rem;
     padding: 3rem;
     width: 95%;
+    height: 100%;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    overflow-y: scroll;
   }
   /* CONTACT END */
 }
