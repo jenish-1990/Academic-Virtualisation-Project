@@ -1693,6 +1693,8 @@ html {
   padding: 0.8rem 1rem;
   background-color: #e64980;
   color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
   cursor: pointer;
 
   display: flex;
@@ -1712,6 +1714,8 @@ html {
   padding: 0.8rem 1rem;
   background-color: #e64980;
   color: #fff;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
   cursor: pointer;
 
   display: flex;
