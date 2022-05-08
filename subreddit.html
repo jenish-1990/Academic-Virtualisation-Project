@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="assets/css/query.css" />
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script defer src="assets/js/all.js"></script>
-  </head>
 
+  </head>
   <body class="body">
     <div class="container">
       <section class="nav">
@@ -67,6 +67,8 @@
         </menu>
         <a href="contact.html" class="contact-us-btn">Contact Us</a>
       </section>
+
+
       <section class="search">
         <button class="nav-btn">
           <i class="ph-list" name="open-nav"></i
@@ -80,68 +82,33 @@
         </div>
         <button class="log-out">LOG OUT</button>
       </section>
-      <section class="main community-main">
-        <div class="filter-tags">
-          <select name="sem" id="sem">
-            <option value="#">Sem</option>
-            <option value="01">1</option>
-            <option value="02">2</option>
-            <option value="03">3</option>
-            <option value="04">4</option>
-            <option value="05">5</option>
-            <option value="06">6</option>
-            <option value="07">7</option>
-            <option value="08">8</option>
-          </select>
 
-          <select name="course" id="course">
-            <option value="#">Course</option>
-            <option value="AU">Automobile Engineering</option>
-            <option value="CH">Chemical Engineering</option>
-            <option value="CI">Civil Engineering</option>
-            <option value="CO">Computer Engineering</option>
-            <option value="EL">Electrical Engineering</option>
-            <option value="EC">Electronics & Communication Engineering</option>
-            <option value="IT">Information Technology</option>
-            <option value="ME">Mechanical Engineering</option>
-          </select>
 
-          <button class="apply-filter">Apply Filter</button>
+<!--      Discussion Forum container -->
+
+      <section>
+      <div class="blog-container">
+        <div class="heading-container">
+          <h1>Machine Learning</h1>
+          <button type="submit" class="join-btn">Join</button>
+        </div>
+      </div>
+
+        <div class="blog-write-container">
+          <form>
+              <label for="title">Title</label>
+              <input class="blog-form" type="text" id="title" name="title" placeholder="Title">
+
+              <label for="blog">Write Blog</label>
+            <textarea class="blog-form" cols="90" rows="5" id="blog" name="blog" placeholder="Your blog description"></textarea>
+
+            <button class="blog-submit-btn" type="submit" value="Submit">Submit</button>
+            </form>
         </div>
 
+</section>
 
-        <!--  Community container-->
 
-<!--        Public community-->
-<div class="community-card-container">
-  <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>Public Commnunity</b></h1></a>
     </div>
-  </div>
-
-
-<!--  Private Community-->
-        <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>Private Commnunity</b></h1></a>
-    </div>
-  </div>
-
-
-<!--  User info-->
-        <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>User Info</b></h1></a>
-    </div>
-  </div>
-</div>
-
-      </section>
-    </div>
-
   </body>
 </html>

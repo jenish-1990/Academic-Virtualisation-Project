@@ -21,7 +21,6 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script defer src="assets/js/all.js"></script>
   </head>
-
   <body class="body">
     <div class="container">
       <section class="nav">
@@ -109,39 +108,91 @@
           <button class="apply-filter">Apply Filter</button>
         </div>
 
-
-        <!--  Community container-->
-
-<!--        Public community-->
-<div class="community-card-container">
-  <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>Public Commnunity</b></h1></a>
-    </div>
-  </div>
-
-
-<!--  Private Community-->
-        <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>Private Commnunity</b></h1></a>
-    </div>
-  </div>
-
-
-<!--  User info-->
-        <div class="card">
-    <img src="assets/img/community.png" alt="Community" style="width:100%">
-    <div class="community-container">
-      <a href="community-explore.html"><h1><b>User Info</b></h1></a>
-    </div>
-  </div>
-</div>
-
+        <div class="community-result">
+          <button class="community-child">
+            <article class="community-article">
+              <div class="user-info">
+                <img
+                  src="assets/img/profile-icon.png"
+                  alt="user-image"
+                  class="user-image"
+                />
+                <p class="user-name">Machine Learning</p>
+              </div>
+            </article>
+          </button>
+          <button class="community-child">
+            <article class="community-article">
+              <div class="user-info">
+                <img
+                  src="assets/img/profile-icon.png"
+                  alt="user-image"
+                  class="user-image"
+                />
+                <p class="user-name">Web Dev</p>
+              </div>
+            </article>
+          </button>
+          <button class="community-child">
+            <article class="community-article">
+              <div class="user-info">
+                <img
+                  src="assets/img/profile-icon.png"
+                  alt="user-image"
+                  class="user-image"
+                />
+                <p class="user-name">Graphics Design</p>
+              </div>
+            </article>
+          </button>
+          <button class="community-child">
+            <article class="community-article">
+              <div class="user-info">
+                <img
+                  src="assets/img/profile-icon.png"
+                  alt="user-image"
+                  class="user-image"
+                />
+                <p class="user-name">App Dev</p>
+              </div>
+            </article>
+          </button>
+        </div>
       </section>
     </div>
 
+    <div class="modal hidden community-modal">
+      <button class="close-modal"><i class="ph-x"></i></button>
+      <div class="modal-body">
+        <div class="user-info">
+          <img
+            src="assets/img/profile-icon.png"
+            alt="user-image"
+            class="user-image"
+          />
+          <div>
+            <p class="user-name">Machine Learning</p>
+            <p class="follower-span">
+              <strong>Members: </strong><span class="follower-count">0</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="college-info">
+          <strong class="college-title">Moderator:</strong>
+          <p class="college-name">Max</p>
+
+          <strong class="college-title">Description:</strong>
+          <p class="college-name">Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="links">
+          <a href="subreddit.html" class="note-link" target="_self"
+            ><i class="ph-compass"></i><span>Explore</span></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
   </body>
 </html>
